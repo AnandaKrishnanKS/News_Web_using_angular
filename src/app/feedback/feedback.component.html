@@ -1,0 +1,14 @@
+<div class="bg-dark p-4">
+    <div class="container-fluid ">
+       <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+          <form *ngFor="let data of usercomments"  class="card m-4 p-1 bg-secondary" style="width: 18rem;">
+              <div class="list-group list-group-flush mb-3">
+                <p class="form-control">Name : {{data.userName}} </p> 
+                <p class="form-control">email Id : {{data.userMailid}} </p> 
+                <p class="form-control mb-auto">comment : {{data.userComment}}</p>
+              </div>
+              <a  type="button" class="btn btn-dark w-50 ms-auto me-auto m-1 mt-auto">delete</a>
+            </form>
+       </div>
+    </div>
+</div>

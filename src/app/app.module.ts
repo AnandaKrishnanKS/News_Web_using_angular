@@ -5,23 +5,33 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopheadingComponent } from './topheading/topheading.component';
 import { HttpClientModule } from '@angular/common/http';
-import { NewsapiservicesService } from './service/newsapiservices.service';
 import { TechnewsComponent } from './technews/technews.component';
 import { BussinessnewsComponent } from './bussinessnews/bussinessnews.component';
+import { FeedbackComponent } from './feedback/feedback.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     TopheadingComponent,
     TechnewsComponent,
-    BussinessnewsComponent
+    BussinessnewsComponent,
+    FeedbackComponent,
+
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    
+    
   ],
-  providers: [NewsapiservicesService],
+  
   bootstrap: [AppComponent]
 })
 export class AppModule { }
